@@ -1,0 +1,19 @@
+{
+  "name": "elex-name-fixer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "natural": "^0.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Dan Zajdband <dan.zajdband@gmail.com>",
+  "license": "MIT"
+}

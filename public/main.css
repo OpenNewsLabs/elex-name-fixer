@@ -1,0 +1,35 @@
+
+.candidate-list li {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.name-list {
+  max-height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: fixed;
+}
+
+.name-list li {
+  background: #eee;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.name-list p {
+  margin: 0;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.submit {
+  position: fixed;
+  right: 50px;
+  top: 20px;
+}
+
+#search {
+  width: 100%;
+  margin: 5px 0;
+}

@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title Match it
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/main.css")
+
+  body
+    .container
+      .row
+        h1 Elex candidate indentifier
+        p Fix automagically matched candidate names by dragging the correspondent name from the right list to the left one
+        button.btn.btn-primary.submit(disabled="disabled") Submit
+      .row
+        .col-sm-6
+          ul.list-unstyled.candidate-list
+            each match in matches
+              li.drop(style="background: #{getBg(match.match)}", data-name=match.name, data-pname=match.pname, data-fecid=match.fecid, data-elexid=match.elexid)
+                p
+                  strong #{match.name}
+                span.pname #{match.pname}
+                | #{' '}
+                span.match (#{match.match.toFixed(2)})
+        .col-sm-4
+          ul.list-unstyled.name-list.col-sm-4
+            input#search(placeholder="search")
+            each name in fecnames
+              li.drag(draggable="true", data-name=name.name, data-id=name.id)
+                p
+                  strong #{name.name}
+
+    script(src="https://code.jquery.com/jquery-2.2.0.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+    script(src="/app.js")
