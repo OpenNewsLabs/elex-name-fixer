@@ -1,7 +1,7 @@
 {
   "name": "elex-name-fixer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Small webapp for helping getting candidate unique ids from candidate name.",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.14.2",
